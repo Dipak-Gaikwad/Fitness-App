@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_login"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menu_workout"
+            android:icon="@drawable/ic_exc"
+            android:title="@string/Workout" />
+        <item
+            android:id="@+id/menu_music"
+            android:icon="@drawable/music"
+            android:title="Music" />
+        <item
+            android:id="@+id/menu_alarm"
+            android:icon="@drawable/menu_alarm"
+            android:title="Alarm"/>
+        <item
+            android:id="@+id/menu_timer"
+            android:icon="@drawable/timer"
+            android:title="@string/Timer" />
+        <item
+            android:id="@+id/menu_calendar"
+            android:icon="@drawable/nav_calendar"
+            android:title="Calendar" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/menu_invite"
+                android:icon="@drawable/nav_invite"
+                android:title="Invite" />
+            <item
+                android:id="@+id/menu_about"
+                android:icon="@drawable/nav_about_us"
+                android:title="About Us" />
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/log_out"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

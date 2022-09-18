@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "200344313314",
+    "firebase_url": "https://fitness-49d98.firebaseio.com",
+    "project_id": "fitness-49d98",
+    "storage_bucket": "fitness-49d98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200344313314:android:eccdbb2b27b0f25d0b6dbb",
+        "android_client_info": {
+          "package_name": "com.akshay.fitnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200344313314-tjf46pfi934gtk5pl4frk0trlnmj07r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akshay.fitnessapp",
+            "certificate_hash": "c2260d3af86979b75c6219added014b1e1abd6b2"
+          }
+        },
+        {
+          "client_id": "200344313314-27dukn1emn01hjkg616lknh7i9qg2cf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhjC5uAfZtDQOsJyMpiYR51G-WkmpSQLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200344313314-27dukn1emn01hjkg616lknh7i9qg2cf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200344313314:android:96f7d38585bac5cc0b6dbb",
+        "android_client_info": {
+          "package_name": "com.akshay.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200344313314-nnmfmhhpc1rk32t27bdb0t2938g5itjt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akshay.login",
+            "certificate_hash": "c2260d3af86979b75c6219added014b1e1abd6b2"
+          }
+        },
+        {
+          "client_id": "200344313314-27dukn1emn01hjkg616lknh7i9qg2cf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhjC5uAfZtDQOsJyMpiYR51G-WkmpSQLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200344313314-27dukn1emn01hjkg616lknh7i9qg2cf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200344313314:android:2b3e930024089ffb0b6dbb",
+        "android_client_info": {
+          "package_name": "com.example.fitness_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200344313314-27dukn1emn01hjkg616lknh7i9qg2cf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhjC5uAfZtDQOsJyMpiYR51G-WkmpSQLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200344313314-27dukn1emn01hjkg616lknh7i9qg2cf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

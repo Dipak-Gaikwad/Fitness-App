@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Alarm_man"
+    android:background="#EAEAEA">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_below="@+id/l1"
+        android:layout_width="254dp"
+        android:layout_height="199dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/alarm_clock" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Lable Your Workout"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/baloo"
+        android:textColorHint="#FF9800"
+        android:background="@drawable/corner_round"
+        android:textColor="#FF9800" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="300dp"
+        android:layout_height="370dp"
+        android:background="@drawable/textview_design"
+        android:headerBackground="#FFEB3B"
+        android:numbersBackgroundColor="#1E1E1E"
+        android:numbersTextColor="#FF9800"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/setBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Set Alarm"
+            android:textColor="#fff"
+            android:fontFamily="@font/baloo"
+            android:background="@drawable/button_round"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel Alarm"
+            android:fontFamily="@font/baloo"
+            android:textColor="#fff"
+            android:background="@drawable/button_round"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

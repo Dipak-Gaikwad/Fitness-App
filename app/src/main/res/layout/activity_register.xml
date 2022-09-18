@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".register">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#ff0000"
+        android:text="name textView"
+        android:fontFamily="@font/calligraffitti"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/nameTextView"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_login" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:cursorVisible="true"
+            android:fontFamily="@font/baloo"
+            android:hint="User Name"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="#FFBF00"
+            android:textColorHint="#EFE05A"
+            android:textCursorDrawable="@android:color/background_light"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#ff0000"
+        android:text="email textView"
+        android:fontFamily="@font/calligraffitti"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/emailTextView"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/email_reg" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:cursorVisible="true"
+            android:fontFamily="@font/baloo"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:textColor="#E91E63"
+            android:textColorHint="#EFE05A"
+            android:textCursorDrawable="@android:color/background_light"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#ff0000"
+        android:text="password textView"
+        android:fontFamily="@font/calligraffitti"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/passwordTextView"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/password_reg" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:cursorVisible="true"
+            android:fontFamily="@font/baloo"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="#008EFF"
+            android:textColorHint="#EFE05A"
+            android:textCursorDrawable="@android:color/background_light"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#ff0000"
+        android:text="password textView"
+        android:fontFamily="@font/calligraffitti"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/confirmPasswordTextView"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/repassword_reg" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:cursorVisible="true"
+            android:fontFamily="@font/baloo"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="#0027FF"
+            android:textColorHint="#EFE05A"
+            android:textCursorDrawable="@android:color/background_light"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:outlineSpotShadowColor="#FFFFFF"
+        android:outlineAmbientShadowColor="#FFE500"
+        android:id="@+id/gender">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:outlineSpotShadowColor="#FFFFFF"
+            android:shadowColor="#FFFFFF"
+            android:theme="@style/RadioButtonStyle"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:text="male"
+            android:fontFamily="@font/calligraffitti"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:outlineSpotShadowColor="#FFFFFF"
+            android:theme="@style/RadioButtonStyle"
+            android:shadowColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="female"
+            android:fontFamily="@font/calligraffitti"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:outlineSpotShadowColor="#FFFFFF"
+            android:shadowColor="#FFFFFF"
+            android:theme="@style/RadioButtonStyle"
+            android:textSize="20sp"
+            android:text="other"
+            android:fontFamily="@font/calligraffitti"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_round"
+        android:onClick="reg_click"
+        android:textAlignment="center"
+        android:id="@+id/registerbtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_round"
+        android:onClick="login_click"
+        android:textAlignment="center" />
+
+</LinearLayout>

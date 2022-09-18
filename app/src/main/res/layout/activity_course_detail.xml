@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fitness_app.course_detail"
+    android:background="#F32C2C2C">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/content_main"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fitness_app.course_detail"
+    android:background="@drawable/background"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageview_gif"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abdominal_crunches"
+                android:background="@drawable/rectangle_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="H,16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="ContentDescription,MissingClass" />
+
+            <TextView
+                android:id="@+id/name_step"
+                style="@style/CardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/mystery_quest"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:text="\t\tSTEPS TO PERFORM : "
+                android:textAlignment="gravity"
+                android:textColor="#DA00FF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageview_gif" />
+
+            <Button
+                android:id="@+id/button_arrow_step"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:gravity="top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/name_step"
+                app:layout_constraintTop_toBottomOf="@+id/imageview_gif"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expandableview_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_margin="12dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/name_benefit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_step"
+                android:background="@drawable/text_round">
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/textView_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/name_step"
+                    tools:ignore="NotSibling"
+                    android:background="@drawable/text_round"
+                    android:textColor="#9C27B0"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:gravity="left|center"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/name_benefit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_round"
+                android:fontFamily="@font/mystery_quest"
+                android:gravity="left|center"
+                android:paddingBottom="5dp"
+                android:text="\t\tBENEFITS : "
+                android:textAlignment="gravity"
+                android:paddingLeft="15dp"
+                android:textColor="#5C00FF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expandableview_step" />
+
+            <Button
+                android:id="@+id/button_arrow_benefit"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/name_benefit"
+                app:layout_constraintTop_toBottomOf="@+id/expandableview_step"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expandableview_benefit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_margin="12dp"
+                android:paddingBottom="12dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_benefit"
+                android:background="@drawable/text_round">
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/textView_benefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/text_round"
+                    android:gravity="left|center"
+                    android:textColor="#673AB7"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/comfortaa_light"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_benefit"
+                    tools:ignore="NotSibling" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/timer"
+            app:backgroundTint="#FFF" />
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
+</RelativeLayout>

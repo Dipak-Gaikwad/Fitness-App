@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/profile_photo"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff0000"
+        android:text="name textView"
+        android:fontFamily="@font/calligraffitti"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/loginemailtv"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_login" />
+    <EditText
+        android:id="@+id/loginuser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:cursorVisible="true"
+        android:fontFamily="@font/baloo"
+        android:hint="User Name"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="#FFBF00"
+        android:textColorHint="#EFE05A"
+        android:textCursorDrawable="@android:color/background_light"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff0000"
+        android:fontFamily="@font/calligraffitti"
+        android:text="password textView"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/loginpasswordtv"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/password_reg" />
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:cursorVisible="true"
+        android:fontFamily="@font/baloo"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#008EFF"
+        android:textColorHint="#EFE05A"
+        android:textCursorDrawable="@android:color/background_light"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="loginbtn"
+        android:textAlignment="center"
+        android:background="@drawable/button_round"
+        android:id="@+id/loginbtn1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="Register"
+        android:textSize="20dp"
+        android:onClick="register"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_round"
+        android:id="@+id/regbtn2"/>
+
+
+
+</LinearLayout>
